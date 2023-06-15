@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>jQuery Tutorial</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+     <div>
+          <p id="para1" style="background-color: rgb(234, 0, 255);color: white;">Lorem, ipsum dolor sit amet consectetur
+               adipisicing elit. Sapiente eligendi nam voluptas placeat temporibus
+               exercitationem at fuga amet dolores voluptates neque vero ad nulla dignissimos, necessitatibus,
+               accusantium deleniti unde dolore?</p>
+     </div>
+     <div>
+          <p id="para2" style="background-color: rgb(255, 217, 0);color: white;">Lorem ipsum, dolor sit amet consectetur
+               adipisicing elit. Rem delectus quaerat soluta dicta quidem.
+               Veritatis quaerat modi voluptate ea aliquid nisi odio reprehenderit. Sequi pariatur, vero dignissimos
+               quisquam eaque quis sit atque est excepturi nam sapiente rem ab, unde aperiam!</p>
+     </div>
+     <p id="para3" style="background-color: rgb(255, 0, 0);color: white;">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+          Reiciendis non quia explicabo autem, sunt quae sapiente excepturi id culpa dolorem unde neque iste veritatis
+          consequuntur repellendus ut provident molestias velit.
+
+     </p>
+     <div>
+          <ul>
+               <li style="background-color: black; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Ullam tempora sapiente pariatur rem
+                    repellendus cupiditate aliquam voluptates impedit id, odit, eum modi fugiat officiis suscipit? Nemo
+                    porro asperiores fuga perferendis eos expedita quisquam sunt quaerat, quo, esse illum vero
+                    repellendus temporibus error eum cumque? Culpa praesentium architecto consequuntur eligendi ipsam.
+               </li>
+               <br>
+               <li style="background-color: red; color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Quisquam, suscipit!</li>
+               <br>
+               <li style="background-color: yellowgreen; color: white;">Lorem ipsum dolor sit amet.</li>
+               <br>
+               <li style="background-color: limegreen; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Id suscipit rerum itaque commodi beatae
+                    iusto?</li>
+               <br>
+          </ul>
+     </div>
+     <button id="hide"> Hide</button>
+     <button id="show"> Show</button>
+</body>
+<script>
+     $(document).ready(function () {
+          $('#hide').click(function () {
+               $('li:first').hide()
+          })
+          $('#show').click(function () {
+               $('li:first').show()
+          })
+     })
+</script>
+
+</html>

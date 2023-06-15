@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Advanced Selectors</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+     <div style="width: 50%; margin: auto;" id="ol1">
+          <ol type="1" style="list-style: none;">
+               <li>index 0 : JavaScript</li>
+               <li>index 1 : React</li>
+               <li>index 2 : Angular</li>
+               <li>index 3 : Node</li>
+               <li>index 4 : Database</li>
+               <li>index 5 : Bootstrap</li>
+               <li>index 6 : Html</li>
+          </ol>
+          <ol type="1" style="list-style: none;" id="ol2">
+               <li>index 0 : JavaScript</li>
+               <li>index 1 : React</li>
+               <li>index 2 : Angular</li>
+               <li>index 3 : Node</li>
+               <li>index 4 : Database</li>
+               <li>index 5 : Bootstrap</li>
+               <li>index 6 : Html</li>
+          </ol>
+          <button id="btn"> Click Me</button>
+     </div>
+     <script>
+          $(document).ready(function () {
+               $('#btn').click(function () {
+                    // $('*').css("backgroundColor", "red")
+                    // $(this).css("backgroundColor", "red")     //this = current element
+
+                    // $('[type]').hide("slow")         //[attribute]
+                    // $('li:even').css("color", "red")    //select elemet odd even 
+
+                    // $('#ol2 li:first-child').css("color", "red")  //select 1st child from ol
+
+                    $('#ol2 li:nth-child(3)').css("color", "red")    //nth = select the position of child
+               })
+          })
+     </script>
+
+</body>
+
+</html>
